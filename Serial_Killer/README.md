@@ -1,10 +1,10 @@
 A serial killer has decided to sell all his victims' possessions on this website. Hack it before he sells any of the items!
 
-300pts(hard)
-ApoorvCTF{c0Ngr47S_y0u_ArE_A_Ser1A1_KI11er}
-hint cost: 50pts
-hint: try to find where the cart items of the user are stored
-web exploiation
+300pts(hard)\
+ApoorvCTF{c0Ngr47S_y0u_ArE_A_Ser1A1_KI11er}\
+hint cost: 50pts\
+hint: try to find where the cart items of the user are stored\
+web exploiation\
 #web
 
 Writeup:
